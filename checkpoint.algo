@@ -1,0 +1,29 @@
+ALGORITHM De traitement de phrase
+VAR
+    Nbmot,Nmvoy,L_Mot,i:INTEGER;
+    phrase,voy:STRING;
+BEGIN
+    voy:="aeouiy";
+    Nbmot:=0;
+    Nmvoy:=0;
+
+    Write("Entrez une phrase qui se termine par un point !");
+    Read(phrase);
+    L_Mot:=Len(phrase);
+    FOR i FROM 1 TO Len(phrase) STEP
+        IF(Find(voy,Mid(phrase,i,1))) <>0 THEN
+            Nmvoy:=Nmvoy+1;
+        END_IF
+
+        IF(Mid(phrase,i,1)=" ")THEN
+            Nbmot:Nbmot+1;
+        END_IF
+
+        i suivant;
+    END_FOR
+
+    Write("La longueur de la phrase est : ",L_mot);
+    Write("Le nombre de voyelle est : ",Nmvoy);
+    Write("Le nombre de mot de la phrase est: " Nbmot+1);
+          
+END
