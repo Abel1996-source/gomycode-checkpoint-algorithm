@@ -22,7 +22,7 @@ BEGIN
     END_FOR
 
     Write("La longueur de la phrase est : ",L_mot);
-    Write("Le nombre de voyelle est : ",Nmvoy,"voyelles");
-    Write("Le nombre de mot de la phrase est: " ,Nbmot+1,"mots");
+    Write("Le nombre de voyelles est : ",Nmvoy,"voyelles");
+    Write("Le nombre de mots de la phrase est: " ,Nbmot+1,"mots");
           
 END
