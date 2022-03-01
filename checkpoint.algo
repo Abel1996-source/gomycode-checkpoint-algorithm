@@ -10,7 +10,7 @@ BEGIN
     Write("Entrez une phrase qui se termine par un point !");
     Read(phrase);
     L_Mot:=Len(phrase);
-    FOR i FROM 1 TO Len(phrase) STEP  i following DO
+    FOR i FROM 1 TO Len(phrase) STEP  1 DO
         IF(Trouve(voy,Mid(phrase,i,1))) <>0 THEN
             Nmvoy:=Nmvoy+1;
         END_IF
